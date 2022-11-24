@@ -1,0 +1,114 @@
+body {
+    background-color: #000f22;
+    color: rgb(144, 201, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 468px;
+    margin: 0 auto;
+}
+
+.container .time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10rem;
+    gap: 5px;
+    margin: 20%;
+    color: rgb(144, 201, 255);
+}
+
+.container .laps {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: auto;
+    overflow: auto;
+}
+
+.container .laps::-webkit-scrollbar {
+    width: 5px;
+}
+
+.container .laps::-webkit-scrollbar-thumb {
+    width: 1px;
+    border-radius: 20px;
+    background-color: #2B2B2B;
+}
+
+.container .laps .laps-title {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    font-size: 2rem;
+    border-bottom: 1px solid #c6c6c6;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.container .laps .laps-title p {
+    margin-bottom: 5%;
+}
+
+.container .laps ol {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    height: 30vh;
+}
+
+.container .laps ol li {
+    font-size: 3rem;
+    padding-bottom: 20%;
+    padding-left: 60px;
+}
+
+.container .actions {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    position: relative;
+    bottom: -50px;
+}
+
+.container .actions button {
+    border: 0;
+    border-radius: 50px;
+    width: 150px;
+    height: 40px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.3rem;
+}
+
+.container .actions .lap {
+    background-color: #212f5c;
+}
+
+.container .actions .reset {
+    background-color: #464d65;
+}
+
+.container .actions .start {
+    background-color: #514fa9;
+}
+
+.container .actions .stop {
+    background-color: #5a1824;
+}
+
+.container .actions .resume {
+    background-color: #333562;
+}
+
+.disable {
+    display: none;
+}
+
+.initial-lap {
+    background-color: #212f5c !important;
+}

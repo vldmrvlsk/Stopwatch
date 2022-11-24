@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="site, text, project, html, css, js">
+    <meta name="description" content="This is stopwatch for u">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/4652/4652636.png"/>
+    <title> Vova Project </title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <div class="time">
+            <div class="min">00</div>:
+            <div class="sec">00</div>:
+            <div class="milisec">00</div>
+        </div>
+        <div class="laps">
+            <div class="laps-title">
+                <p>Lap</p>
+                <p>Overall time</p>
+            </div>
+            <ol type="1"></ol>
+        </div>
+        <div class="actions">
+            <button class="lap initial-lap">Lap</button>
+            <button class="reset disable">Reset</button>
+            <button class="start">Start</button>
+            <button class="stop disable">Stop</button>
+            <button class="resume disable">Resume</button>
+        </div>
+    </main>
+    <script src="sw.js"></script>
+</body>
+</html>
